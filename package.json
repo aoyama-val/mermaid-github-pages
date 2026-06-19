@@ -11,6 +11,8 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "@mermaid-js/mermaid-cli": "^11.15.0"
+    "@mermaid-js/mermaid-cli": "^11.15.0",
+    "markdown-to-html-cli": "^5.0.4",
+    "marked": "^18.0.5"
   }
 }
