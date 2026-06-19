@@ -21,13 +21,7 @@ jobs:
         node-version: '24.9.0'
         cache: npm
     - run: npm ci
-    - run: mkdir -p dist
-    - name: Convert markdown to svg
-      run: |
-        cd dist
-        puppeteer_config="$(mktemp)"
-        echo '{"args": ["--no-sandbox"]}' > "$puppeteer_config"
-        npx mmdc --input ../sample1.md --output sample1.md --puppeteerConfigFile "$puppeteer_config"
+    - run: make
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
