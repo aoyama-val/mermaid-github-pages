@@ -1,4 +1,4 @@
-### Some markdown
+### 図1
 
 ```mermaid
 sequenceDiagram
@@ -17,7 +17,7 @@ sequenceDiagram
 
 ```
 
-### Mermaid with custom title/desc
+### 図2
 
 ```mermaid
 graph
