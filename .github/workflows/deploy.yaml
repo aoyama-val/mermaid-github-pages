@@ -19,7 +19,9 @@ jobs:
     - run: mkdir -p dist
     - run: |
         cd dist
-        npx mmdc -i ../sample1.md -o sample1.md
+        puppeteer_config="$(mktemp)"
+        echo '{"args": ["--no-sandbox"]}' > "$puppeteer_config"
+        npx mmdc --input ../sample1.md --output sample1.md --puppeteerConfigFile "$puppeteer_config"
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
