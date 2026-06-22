@@ -25,3 +25,31 @@ graph
    accDescr: My description here
    A-->B
 ```
+
+### テーブルなど
+
+aa | bb | cc
+---|---|---
+11|22|33
+44|55|66
+
+`inline code`
+
+code block:
+```
+This
+is
+a
+pen.
+```
+
+箇条書き
+
+- 1
+- 2
+- 3
+
+1. aaa
+2. bbb
+3. ccc
+
