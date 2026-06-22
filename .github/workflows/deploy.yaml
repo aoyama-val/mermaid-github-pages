@@ -21,6 +21,7 @@ jobs:
         node-version: '24.9.0'
         cache: npm
     - run: npm ci
+    - run: sudo apt install fonts-noto
     - run: make
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
